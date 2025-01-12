@@ -47,6 +47,7 @@ resource "aws_instance" "my_instance" {
     subnet_id                            = "subnet-06acb1c40cc144f01"
     tags                                 = {
         "Name" = "aws-terraform-import-demo"
+        "Author" = "Irfan"
     }
     tags_all                             = {
         "Name" = "aws-terraform-import-demo"
