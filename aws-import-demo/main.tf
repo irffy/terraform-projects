@@ -8,11 +8,11 @@ provider "aws" {
 
 resource "aws_instance" "my_instance" {
     ami                                  = "ami-05576a079321f21f8"
-    arn                                  = "arn:aws:ec2:us-east-1:241533162589:instance/i-04097b5ba4faa74d0"
+    # arn                                  = "arn:aws:ec2:us-east-1:241533162589:instance/i-04097b5ba4faa74d0"
     associate_public_ip_address          = true
     availability_zone                    = "us-east-1c"
     cpu_core_count                       = 1
-    cpu_threads_per_core                 = 1
+    # cpu_threads_per_core                 = 1
     disable_api_stop                     = false
     disable_api_termination              = false
     ebs_optimized                        = false
@@ -23,21 +23,21 @@ resource "aws_instance" "my_instance" {
     id                                   = "i-04097b5ba4faa74d0"
     instance_initiated_shutdown_behavior = "stop"
     instance_lifecycle                   = null
-    instance_state                       = "running"
+    # instance_state                       = "running"
     instance_type                        = "t2.micro"
-    ipv6_address_count                   = 0
-    ipv6_addresses                       = []
+    # ipv6_address_count                   = 0
+    # ipv6_addresses                       = []
     key_name                             = "aws-key"
     monitoring                           = false
     outpost_arn                          = null
     password_data                        = null
     placement_group                      = null
     placement_partition_number           = 0
-    primary_network_interface_id         = "eni-0c1474dc7a21da97f"
+    # primary_network_interface_id         = "eni-0c1474dc7a21da97f"
     private_dns                          = "ip-172-31-35-84.ec2.internal"
     private_ip                           = "172.31.35.84"
-    public_dns                           = "ec2-18-212-148-34.compute-1.amazonaws.com"
-    public_ip                            = "18.212.148.34"
+    # public_dns                           = "ec2-18-212-148-34.compute-1.amazonaws.com"
+    # public_ip                            = "18.212.148.34"
     secondary_private_ips                = []
     security_groups                      = [
         "launch-wizard-7",
@@ -62,8 +62,8 @@ resource "aws_instance" "my_instance" {
 
     cpu_options {
         amd_sev_snp      = null
-        core_count       = 1
-        threads_per_core = 1
+        # core_count       = 1
+        # threads_per_core = 1
     }
 
     credit_specification {
