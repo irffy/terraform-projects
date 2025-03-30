@@ -1,6 +1,13 @@
 **/*.pem
 .vscode/
-**/*.terraform
-**/*.terraform.lock.hcl
-**/terraform.tfstate
-**/terraform.tfstate.backup
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore Terraform lock files
+*.terraform.lock.hcl
+
+# Ignore Terraform working directory
+.terraform/
